@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+    <meta
+      name="description"
+      content="Stay updated with the latest news and insights on technology, Web 3.0, gaming, and innovation on our homepage."
+    />
+
+    <meta property="og:title" content="Frontend Mentor | News homepage" />
+    <meta
+      property="og:description"
+      content="Stay updated with the latest news and insights on technology, Web 3.0, gaming, and innovation on our homepage."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://miwodi-news-homepage.netlify.app"
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dz209s6jk/image/upload/v1699572740/Screenshots/fbxulkqz8yk1iu2hqtr1.jpg"
+    />
+
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <img
+        src="./assets/images/logo.svg"
+        alt="icon logo"
+        class="header__logo"
+      />
+      <nav class="nav" role="navigation" aria-expanded="false">
+        <div class="nav__overlay"></div>
+        <ul class="nav__list">
+          <li class="nav__item nav__item--home">
+            <a href="#" rel="noopener noreferrer" target="_blank">Home</a>
+          </li>
+          <li class="nav__item nav__item--new">
+            <a href="#" rel="noopener noreferrer" target="_blank">New</a>
+          </li>
+          <li class="nav__item nav__item--popular">
+            <a href="#" rel="noopener noreferrer" target="_blank">Popular</a>
+          </li>
+          <li class="nav__item nav__item--trending">
+            <a href="#" rel="noopener noreferrer" target="_blank">Trending</a>
+          </li>
+          <li class="nav__item nav__item--categories">
+            <a href="#" rel="noopener noreferrer" target="_blank">Categories</a>
+          </li>
+        </ul>
+        <button
+          type="button"
+          class="btn nav__btn"
+          aria-label="navigation button"
+        >
+          <img src="./assets/images/icon-menu.svg" alt="" class="nav__icon" />
+        </button>
+      </nav>
+    </header>
+
+    <main class="main">
+      <h1 class="visually-hidden">News Homepage</h1>
+      <picture class="web3-picture">
+        <source
+          srcset="./assets/images/image-web-3-desktop.jpg"
+          media="(min-width:43rem)"
+        />
+        <img
+          src="./assets/images/image-web-3-mobile.jpg"
+          alt="image web3"
+          class="web3-img"
+        />
+      </picture>
+
+      <article class="web3">
+        <h2 class="web3__title">The Bright Future of Web 3.0?</h2>
+        <div class="web3__content">
+          <p class="web3__text">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button type="button" class="btn web3__btn" aria-label="read more">
+            Read more
+          </button>
+        </div>
+      </article>
+
+      <section class="news">
+        <h2 class="news__title">New</h2>
+
+        <article class="news__item news__item--1">
+          <h3 class="news__item-title">Hydrogen VS Electric Cars</h3>
+          <p class="news__item-text">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </article>
+
+        <article class="news__item news__item--2">
+          <h3 class="news__item-title">The Downsides of AI Artistry</h3>
+          <p class="news__item-text">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+        </article>
+
+        <article class="news__item news__item--3">
+          <h3 class="news__item-title">Is VC Funding Drying Up?</h3>
+          <p class="news__item-text">
+            Private funding by VC firms is down 50% YOY. We take a look at what
+            that means.
+          </p>
+        </article>
+      </section>
+
+      <section class="tech">
+        <article class="tech__item tech__item--1">
+          <img
+            src="./assets/images/image-retro-pcs.jpg"
+            alt="image retro pcs"
+            class="tech__img"
+          />
+          <div class="tech__content">
+            <h3 class="tech__number">01</h3>
+            <p class="tech__title">Reviving Retro PCs</p>
+            <p class="tech__text">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </article>
+
+        <article class="tech__item tech__item--2">
+          <img
+            src="./assets/images/image-top-laptops.jpg"
+            alt="image top laptops"
+            class="tech__img"
+          />
+          <div class="tech__content">
+            <h3 class="tech__number">02</h3>
+            <p class="tech__title">Top 10 Laptops of 2022</p>
+            <p class="tech__text">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </article>
+
+        <article class="tech__item tech__item--3">
+          <img
+            src="./assets/images/image-gaming-growth.jpg"
+            alt="image gaming"
+            class="tech__img"
+          />
+          <div class="tech__content">
+            <h3 class="tech__number">03</h3>
+            <p class="tech__title">The Growth of Gaming</p>
+            <p class="tech__text">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/LaudeDignus">LaudeDignus</a>.
+    </div>
+  </body>
+</html>
