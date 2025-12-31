@@ -1,4 +1,3 @@
-const body = document.querySelector("body");
 const navBtn = document.querySelector(".nav__btn");
 const nav = document.querySelector(".nav");
 const img = navBtn.querySelector(".nav__icon");
